@@ -13,8 +13,8 @@ class Tester(unittest.TestCase):
         self.assertEquals(None, count_weekday(2013, -2, 3))
 
     def exception_test(self):
-        args = ["afesfd", 2, 3.9]
-        self.assertRaises(WrongInputException, count_weekday, args)
+        # args = ["afesfd", 2, 3.9]
+        self.assertRaises(WrongInputException, count_weekday("afesfd", 2, 3.9))
 
 
 if __name__ == '__main__':
